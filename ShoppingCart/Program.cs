@@ -7,16 +7,18 @@ namespace ShoppingCart
     {
         public static void Main(string[] args)
         {
-            List<string> list = new List<string>();
-            list.Add("Orange");
-            list.Add("Apple");
 
-            Cart cart=new Cart(list);
+            Products apple = new Products(0.6);
+            Products orange = new Products(0.25);
 
-            Console.WriteLine(cart.appleCount());
-            Console.WriteLine(cart.orangeCount());
 
-            Console.WriteLine(cart.toString());
+            Cart myCart = new Cart();
+
+            myCart.products.Add(orange);
+            myCart.products.Add(apple);
+            myCart.products.Add(orange);
+
+            Console.WriteLine(myCart.priceToPay());
 
         }
     }
