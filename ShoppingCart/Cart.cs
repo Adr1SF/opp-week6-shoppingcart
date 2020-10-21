@@ -8,6 +8,8 @@ namespace ShoppingCart
         public List<Products> products = new List<Products>();
         private double finalPrice;
 
+
+
         public double priceToPay()
         {
             finalPrice = 0;
