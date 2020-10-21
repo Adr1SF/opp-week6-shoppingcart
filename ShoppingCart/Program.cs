@@ -8,8 +8,8 @@ namespace ShoppingCart
         public static void Main(string[] args)
         {
 
-            Products apple = new Products(0.6);
-            Products orange = new Products(0.25);
+            Products apple = new Products("Apple",0.6);
+            Products orange = new Products("Orange",0.25);
 
 
             Cart myCart = new Cart();
